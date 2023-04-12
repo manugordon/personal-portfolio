@@ -1,8 +1,8 @@
 
-import { Container, Row, Col, Nav, Tab} from "react-bootstrap"
+import { Container, Row, Col, Tab} from "react-bootstrap"
 import { ProjectCard } from "./ProjectCard"
 import colorSharp2 from "../assets/img/color-sharp2.png"
-import projImg1 from "../assets/img/project-img1.png"
+import projImg1 from "../assets/img/project-img4.png"
 import projImg2 from "../assets/img/project-img2.png"
 import projImg3 from "../assets/img/project-img3.png"
 
@@ -10,19 +10,22 @@ export const Projects = () => {
 
     const projects = [
         {
-            title: "Mercado Liebre",
-            description: "Design % Development",
-            imgUrl: projImg1,
+            title: "Estoy Seguro",
+            description: "As part of an integrative project, I was responsible for designing and developing an E-commerce website. I successfully created a functional platform for users with an easy-to-use design. I collaborated with other developers on the team.",
+            imgUrl: projImg2,
+            projectUrl: "https://github.com/manugordon/Project-EstoySeguro/tree/main/Node"
         },
         {
-            title: "Estoy Seguro",
-            description: "Design % Development",
-            imgUrl: projImg2,
+            title: "Mercado Liebre",
+            description: "Design and development of an e-commerce website to enhance knowledge in CSS, JavaScript, and HTML.",
+            imgUrl: projImg1,
+            projectUrl: "https://mercaditus-liebre.onrender.com/"
         },
         {
             title: "Portfolio",
-            description: "Design % Development",
+            description: "This beautiful portfolio designed with React",
             imgUrl: projImg3,
+            projectUrl: "https://github.com/manugordon/personal-portfolio"
         }
     ]
     return (
@@ -31,7 +34,7 @@ export const Projects = () => {
                 <Row>
                     <Col>
                         <h2> Projects</h2>
-                        <p> Lorem ipsum</p>
+                        <p>Welcome to my projects section, where I showcase my latest work and passion projects. These projects are a reflection of my skills and interests. Take a look and feel free to reach out if you have any questions or collaboration opportunities</p>
                         <Tab.Container id="projects-tabs" defaultActiveKey="first">
                         {/* <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
                             <Nav.Item>

@@ -7,7 +7,7 @@ export const Banner = () => {
 
     const [loopNum, setLoopNum] = useState(0)
     const [isDeleting, setIsDeleting] = useState(false)
-    const toRotate = ["Manuelito Gordon","Web Developer", "Web Designer"]
+    const toRotate = ["Manuel Gordon","Web Developer", "Web Designer"]
     const [text, setText] = useState('')
     const [delta, setDelta] = useState(300 - Math.random() * 100)
     const period = 200
@@ -48,7 +48,7 @@ export const Banner = () => {
                         <span className="tagline">Welcome to my Portfolio</span>
                         <h1>Hi I'm <span className="wrap">{text}</span></h1>
                         <p> I'm a full stack web developer. I am excited to embark on my career as a developer and apply my skills to real-world projects</p>
-                        <button onClick={()=>console.log('connect')}>Let's connect <ArrowRightCircle size={25}/></button>
+                        <button onClick={()=>window.location.href='#contact'}>Let's connect <ArrowRightCircle size={25}/></button>
                     </Col>
                     <Col xs={12} md={6} xl={5}>
                         <img src={headerImg} alt="Header Img"/>

@@ -27,7 +27,7 @@ export const Contact = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-
+        setButtonText('Sending...')
         emailjs.sendForm('service_eoaw44a', 'template_xh7h6k7', form.current, 'ae9ttbL1s241cbUc7')
         .then((result) => {
             console.log(result.text);
@@ -35,12 +35,16 @@ export const Contact = () => {
                 success: true,
                 message: "Email sent successfully"
             })
+            setButtonText('Send')
+            setFormDetails(formInitialDetails)
         }, (error) => {
             setStatus({
                 success: false,
                 message: "There was an error sending"
             })
         });
+
+    
     }
 
     return (
